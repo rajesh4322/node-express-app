@@ -19,6 +19,9 @@ app.get('/big',  (req, res) =>{
 app.get('/greeting/:id',  (req, res) =>{
   res.send('Hello! The id was ' + req.params.id)
 })
+app.get('/Basket_ball/:player_name',  (req, res) =>{
+  res.send('LeBron is Greatest Of All Time!!! ' + req.params.player_name)
+})
 
 app.get('/yo/:buddy',  (req, res) =>{
   res.send('<h1>Yo, ' + req.params.buddy + '!</h1>')
